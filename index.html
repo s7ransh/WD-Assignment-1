@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Portal</h1>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#profile">Profile</a> |
+            <a href="#courses">Courses</a> |
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <main id="home">
+
+        <section id="profile">
+            <h2>Student Profile</h2>
+            <h3 id="student-name">Saransh Gaur</h3>
+            <span class="badge">Top Performer</span>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <td class="highlight">Saransh Gaur</td>
+                    </tr>
+                    <tr>
+                        <th>Student ID</th>
+                        <td>26bcs10817</td>
+                    </tr>
+                    <tr>
+                        <th>Program</th>
+                        <td class="highlight">Computer Science</td>
+                    </tr>
+                    <tr>
+                        <th>Year</th>
+                        <td>1st Year</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>saransh.26bcs10817@sst.scaler.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section id="courses">
+            <h2>Weekly Schedule</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>9:30 AM</th>
+                        <th>11:30 AM</th>
+                        <th>2:00 PM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Monday</th>
+                        <td>WebDev</td>
+                        <td>MOP</td>
+                        <td>ICP</td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td>MOP</td>
+                        <td>WebDev</td>
+                        <td>ICP</td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td>WebDev</td>
+                        <td>ICP</td>
+                        <td>MOP</td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td>ICP</td>
+                        <td>ICP Lab</td>
+                        <td>MOP</td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td>WebDev</td>
+                        <td>WebDev Lab</td>
+                        <td>ICP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="register">
+            <h2>Course Registration</h2>
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Student Information</legend>
+
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </p>
+
+                    <p>
+                        <label for="student-id">Student ID:</label>
+                        <input type="text" id="student-id" name="student_id">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Selection</legend>
+
+                    <p>
+                        <label for="course">Course:</label>
+                        <select id="course" name="course">
+                            <option value="">Select Course</option>
+                            <option value="html-css">WebDev</option>
+                            <option value="javascript">ICP</option>
+                            <option value="python">MOP</option>
+                            <option value="dsa">Angrezi</option>
+                            <option value="dbms">English</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferred Learning Mode</legend>
+
+                    <input type="radio" id="online" name="mode" value="online">
+                    <label for="online">Online</label>
+
+                    <input type="radio" id="offline" name="mode" value="offline">
+                    <label for="offline">Offline</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Skills You Already Know</legend>
+
+                    <input type="checkbox" id="skill-html" name="skills" value="html">
+                    <label for="skill-html">HTML</label>
+
+                    <input type="checkbox" id="skill-css" name="skills" value="css">
+                    <label for="skill-css">CSS</label>
+
+                    <input type="checkbox" id="skill-js" name="skills" value="javascript">
+                    <label for="skill-js">JavaScript</label>
+
+                    <input type="checkbox" id="skill-python" name="skills" value="python">
+                    <label for="skill-python">Python</label>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+</html>
